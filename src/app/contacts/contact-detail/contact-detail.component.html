@@ -1,9 +1,9 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4 class="panel-body">{{ contacts.name }}</h4>
+    <h4 class="panel-body">{{ contact.name }}</h4>
     <img 
-      [src]="contacts.imageUrl"
-      alt="{{ contacts.name }}"
+      [src]="contact.imageUrl"
+      alt="{{ contact.name }}"
       class="img-responsive"
       style="max-height: 50px;">
     <div class="btn-group">
@@ -14,10 +14,10 @@
   <div class="panel-body">
     <ul class="list-group">
       <a class="list-group-item">
-        <strong>Email:</strong> {{ contacts.email }}
+        <strong>Email:</strong> {{ contact.email }}
       </a>
       <a class="list-group-item">
-        <strong>Phone:</strong> {{ contacts.phone }}
+        <strong>Phone:</strong> {{ contact.phone }}
       </a>
     </ul>
 </div>
