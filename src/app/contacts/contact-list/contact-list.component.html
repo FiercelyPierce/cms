@@ -1,7 +1,9 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h1>Contacts</h1>
-    <button class="btn btn-success" (click)="onNewContact()">New Contact</button>
+    <div class="row pad-left-right">
+      <span class="pull-left title">Contacts</span>
+      <button class="btn btn-success pull-right" (click)="onNewContact()">New Contact</button>
+    </div>
   </div>
   <div class="panel-body">
     <cms-contact-item 
