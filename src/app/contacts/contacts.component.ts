@@ -4,7 +4,6 @@ import { Contact } from './contact.model';
 @Component({
   selector: 'cms-contacts',
   standalone: false,
-  
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.css'
 })
