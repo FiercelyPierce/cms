@@ -10,7 +10,7 @@ import { ContactService } from '../contact.service';
 })
 export class ContactListComponent implements OnInit {
   @Output() selectedContactEvent = new EventEmitter<Contact>();
-  contacts: Contact[];
+  contacts: Contact[] = [];
 
   constructor(private contactService: ContactService) {}
 
