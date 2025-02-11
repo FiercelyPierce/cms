@@ -1,11 +1,15 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4 class="panel-body">{{ contact.name }}</h4>
-    <img 
-      [src]="contact.imageUrl"
-      alt="{{ contact.name }}"
-      class="img-responsive"
-      style="max-height: 50px;">
+    <div class="row pad-left-right">
+      <span class="pull-left title">{{ contact.name }}</span>
+      <div class="pull-right">
+        <img 
+          [src]="contact.imageUrl"
+          alt="{{ contact.name }}"
+          class="img-responsive"
+          style="max-height: 50px;">
+      </div>
+    </div>
     <div class="btn-group">
       <button class="btn btn-primary">Edit</button>
       <button class="btn btn-danger">Delete</button>
