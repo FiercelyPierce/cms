@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'messages';
-
-  switchView(selectedFeature: string) {
-    this.title = selectedFeature;
-  }
+  title = 'documents';
 }
