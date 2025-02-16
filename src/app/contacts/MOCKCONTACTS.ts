@@ -49,7 +49,7 @@ export const MOCKCONTACTS: Contact[] = [
   },
   // index 5
   {
-    id: 9,
+    id: 8,
     name: 'Craig Lindstrom',
     email: 'lindstromc@byui.edu',
     phone: '208-496-3769',
@@ -58,7 +58,7 @@ export const MOCKCONTACTS: Contact[] = [
   },
   // index 6
   {
-    id: 10,
+    id: 9,
     name: 'Michael McLaughlin',
     email: 'mclaughlinm@byui.edu',
     phone: '208-496-3772',

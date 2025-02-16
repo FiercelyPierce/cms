@@ -5,6 +5,8 @@ import { DocumentEditComponent } from './documents/document-edit/document-edit.c
 import { DocumentDetailComponent } from './documents/document-detail/document-detail.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { MessagesListComponent } from './messages/messages-list/messages-list.component';
+import { ContactEditComponent } from './contacts/contact-edit/contact-edit.component';
+import { ContactDetailComponent } from './contacts/contact-detail/contact-detail.component';
 
 const appRouts: Routes = [
   { path: '', redirectTo: '/documents', pathMatch: 'full' },
@@ -18,7 +20,13 @@ const appRouts: Routes = [
     ],
   },
   { path: 'messages', component: MessagesListComponent },
-  { path: 'contacts', component: ContactsComponent },
+  { path: 'contacts', component: ContactsComponent, 
+    children: [
+      { path: 'new', component: ContactEditComponent },
+      { path: ':id', component: ContactDetailComponent },
+      { path: ':id/edit', component: ContactEditComponent }
+    ]
+  },
 ];
 
 @NgModule({
