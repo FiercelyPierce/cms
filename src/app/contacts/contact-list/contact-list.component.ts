@@ -15,15 +15,20 @@ import { Subscription } from 'rxjs';
 export class ContactListComponent implements OnInit {
   contacts: Contact[] = [];
   subscription: Subscription;
+  term: string;
 
   constructor(private contactService: ContactService) {}
 
   ngOnInit() {
-    this.contacts = this.contactService.getContacts();
+    this.contactService.getContacts();
     this.subscription = this.contactService.contactListChangedEvent.subscribe(
       (contactList: Contact[]) => {
         this.contacts = contactList;
       }
     );
+  }
+
+  search(value: string) {
+    this.term = value;
   }
 }

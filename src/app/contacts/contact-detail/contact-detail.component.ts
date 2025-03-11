@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Contact } from '../contact.model';
 import { ContactService } from '../contact.service';
-import { ActivatedRoute, Params, Router } from '@angular/router';
 
 @Component({
   selector: 'cms-contact-detail',

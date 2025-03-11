@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Document } from '../document.model';
 import { DocumentService } from '../document.service';
@@ -12,7 +12,7 @@ import { WindRefService } from '../../wind-ref.service';
 })
 export class DocumentDetailComponent implements OnInit {
   nativeWindow: any;
-  document: Document;
+  @Input() document: Document;
 
   constructor(
     private documentService: DocumentService, 
